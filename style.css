@@ -1,0 +1,631 @@
+/*CSS Reset / Normalize*/
+/* Hemos disponibilizado el básico de reset de estilos. Si quieren, añadan más informaciones 
+en las secciones señaladas */
+/*Já deixaremos o básico de reset de estilos. Caso queira adicionar mais informações
+coloque nas sessões indicadas*/
+
+:root{
+    /* Inserta la variable de los otros colores inspeccionando el exemplo de figma */
+    /*Se esforce para trabalhar com variáveis, é uma dica profissional valiosa*/
+   --cor-de-fundo: #F5F5F5;
+   --cor-de-link: #000;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--cor-de-fundo) ;
+    font-family: 'Raleway';
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+}
+ol, ul,li {
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: var(--cor-de-link);
+}
+
+/*En este desafío nosostros gustaríamos que ustedes intentaran utilizar la metodología BEM. 
+
+Lo que es el BEM?
+
+BEM (Bloque, Elemento, Modificador) es un enfoque basado en componentes para el 
+desarrollo web. La idea detrás de esto es dividir la interfaz de usuario en bloques
+independientes. Esto hace que el desarrollo de la interfaz sea fácil y rápido, incluso
+con una interfaz de usuario compleja, y permite la reutilización del código existente sin copiar y pegar.
+
+Enlace de la documentación oficial!
+https://en.bem.info/methodology/quick-start/*/
+
+/*Sección Menu*/
+
+section.menu{
+    display:flex;
+    width: 90%;
+    justify-content:space-between;
+    padding: 20px 30px 20px 0px;
+    align-items: center;
+    margin-left: 5%;
+}
+
+.menu__header{
+    display: flex;
+    justify-content: center;
+    font-size: 2em;
+    gap: 20px;
+    font: bold;
+}
+
+.menu__list{
+    display: inline-flex;
+    gap: 20px;
+    align-items: center;
+    font-size: 1.2em;
+    
+}
+
+.menu__list__item__contato{
+    display: none;
+}
+
+/*Sección Title*/
+
+section.title{
+    display: flex;
+    margin: 5% 
+}
+
+.title__container{
+    flex-wrap: wrap;
+    width: 80%;
+}
+
+.title__bio{
+    font-size: 3em;
+    padding-bottom: 30px;
+    font: bold;
+}
+
+.title__subsection{
+    font-size: 1.5em;
+    padding-bottom: 30px;
+}
+
+.title__profile{
+    float: right;
+    margin-right: 5%;
+    border-radius: 20%;
+}
+
+.title__network{
+    display: flex;
+    gap: 10%;
+}
+
+.title__network__item{
+    flex-direction: row;
+    align-items: center;
+    
+}
+
+/*Sección About*/
+
+section.about{
+    background: #EAF2FD;
+    height: 300px;
+}
+
+.about__container{
+    margin: 5%;
+}
+
+.about__title{
+    font-size: 2em;
+    font: bold;
+    padding: 20px 0px 20px ;
+}
+
+.about__paragraph{
+    padding: 20px 0px 20px ;
+    width: 80%;
+    font-size: 1.2em;
+}
+
+
+/*Sección skills*/
+
+.skills{
+    margin: 20px 5% ;
+    height: 244px;
+}
+
+.skills__title{
+    font-size: 2em;
+    font: bold;
+    padding: 40px 0px 40px ;
+    text-align: center;
+}
+
+.skills__line{
+    display: flex;
+    justify-content: space-around;   
+}
+
+.skills__box{
+    display: flex;
+    background: #ffffff;
+    height: 120px;
+    width: 120px;
+    align-items: flex-end;
+    padding: 10px;    
+}
+
+.skills__img{
+    margin-bottom: 10px;
+}
+
+/*Sección Hobbies*/
+
+section.hobbies{
+    margin: 20px 5% ;
+    height: 344px;
+}
+
+.hobbies__title{
+    font-size: 2em;
+    font: bold;
+    padding: 40px 0px 40px ;
+    text-align: center;
+}
+
+.hobbies__line{
+    display: flex;
+    justify-content: space-around; 
+}
+
+.hobbies__box{
+    display: flex;
+    background: #ffffff;
+    height: 120px;
+    width: 120px;
+    align-items: flex-end;
+    padding: 10px; 
+}
+
+.hobbies__img{
+    margin-bottom: 10px;
+}
+
+/* Experiencia Académica*/
+
+section.academic{
+    background: #EAF2FD;
+    height: 500px;
+}
+
+.academic__title{
+    text-align: center;
+    font-size: 2em;
+    font: bold;
+    padding: 40px 0px 40px ;
+}
+
+.academic__courses{
+    display: flex;
+    justify-content: space-around; 
+}
+
+.academic__courses__item__img{
+    display: flex;
+    background: #ffffff;
+    height: 250px;
+    width: 250px;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    
+}
+
+.academic__courses__item__title{
+    margin: 10px 0px;
+    font-size: 1.2em;
+    font: bold;
+}
+
+/* experiencia*/
+
+section.experience{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.experience__section__title{
+    text-align: center;
+    font-size: 2em;
+    font: bold;
+    padding: 40px 0px 40px ;
+}
+
+.experiencie__box{
+    margin: 30px 0px 30px 5%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 100px;
+    
+}
+
+.experience__box{
+    margin: 30px 5% 30px 0px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 100px;
+}
+
+.experience__title{
+    margin: 20px 0px;
+    font-size: 1.5em;
+    font: bold;
+}
+
+.experience__text{
+    margin: 10px 0px;
+}
+
+.experiencia__botao--repo{
+    padding: 15px;
+    background: #EAF2FD;
+    border: 1px solid #212485;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 10px 0px;
+}
+
+.experience__botao--demo{
+    color: white ;
+    padding: 15px;
+    background: #212485;
+    border: 1px solid #EAF2FD;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 10px 0px;
+    
+}
+
+
+/*Contacto*/
+
+section.formcontato{
+    background: #EAF2FD;
+    display: flex;
+    
+    
+}
+
+.formcontato__contacto{
+    display: flex;
+    margin-left: 5%;
+    gap: 15px;
+}
+
+.formcontato__text{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.formcontato__title{
+    margin: 20px 0px;
+    font-size: 1.5em;
+    font: bold;
+}
+
+.formcontato__form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.formcontato__input{
+    height: 50px;
+}
+
+.formcontato__botao{
+color: white ;
+padding: 15px;
+background: #212485;
+border: 1px solid #EAF2FD;
+border-radius: 10px;
+cursor: pointer;
+margin: 10px 0px;
+}
+
+/*footeer*/
+
+section.footer{
+   height: 100px;
+
+}
+
+.footer__rodape{
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+    padding-top: 20px;
+}
+
+/* Vamos a desafiarnos trabajando con responsividad?
+Utiliza las referencias de los breakpoints @media abajo */
+
+
+/*Tablet*/
+@media (max-width: 1200px) {
+
+/* Menú */
+.menu__list{
+    display: none;
+}
+
+.menu__list__item__contato{
+    display: inline-flex;
+    gap: 20px;
+    align-items: center;
+    font-size: 1.2em;
+}
+
+/*title*/
+
+.about__paragraph{
+    padding: 20px 0px 20px ;
+    width: 100%;
+    font-size: 1.2em;
+}
+
+/*Skills*/
+.skills{
+    margin: 20px 2% ;
+    height: 400px;
+    width: 95%;    
+}
+
+.skills__line{
+    flex-wrap: wrap;
+}
+
+.skills__box{
+    display: flex;
+    margin-top: 15px;
+    background: #ffffff;
+    height: 120px;
+    width: 200px;
+    align-items: flex-end;
+    padding: 10px;    
+}
+/*Hobbies*/
+
+section.hobbies{
+    margin: 50px 2% ;
+    height: 400px;
+    width: 95%; 
+}
+
+
+.hobbies__line{
+    flex-wrap: wrap;
+}
+
+.hobbies__box{
+    display: flex;
+    margin-top: 15px;
+    background: #ffffff;
+    height: 120px;
+    width: 200px;
+    align-items: flex-end;
+    padding: 10px;
+}
+
+/*Formación Académica*/
+section.academic{
+    height: 400px;
+}
+
+
+.academic__courses{
+    display: flex;
+    justify-content: space-around; 
+}
+
+.academic__courses__item__img{
+    display: flex;
+    background: #ffffff;
+    height: 180px;
+    width: 200px;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    
+}
+
+.academic__courses__item__title{
+    margin: 10px 0px;
+    font-size: 1em;
+    
+}
+/*Experiencia Profesional*/
+.experiencie__box{
+    margin: 10px 3% ;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;    
+}
+
+.experience__box{
+    margin: 10px 3% ;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px; 
+}
+
+.experience__img{
+    width: 100%;
+}
+
+.experience__text{
+    margin: 10px 0px;
+}
+
+.formcontato__img{
+    display: none;
+}
+
+.formcontato__form{
+    width: 100%;
+}
+
+}
+
+
+
+/*Mobile*/
+@media (max-width: 600px) {
+
+/*Menu*/
+.menu__header{
+    display: flex;
+    justify-content: center;
+    font-size: 1em;
+    gap: 20px;
+    align-items: center;
+    font: bold;
+}
+
+.menu__list__item__contato{
+    display: inline-flex;
+    gap: 20px;
+    align-items: center;
+    font-size: 1em;
+}
+
+/*Titulo*/
+.title__profile{
+    float: none;
+    margin-right: 5%;
+    border-radius: 20%;
+}
+
+.title__bio{
+    font-size: 1.5em;
+    padding-bottom: 30px;
+    font: bold;
+}
+
+.title__subsection{
+    font-size: 1em;
+    padding-bottom: 30px;
+}
+
+
+/*Sección sobre mi*/
+
+section.about{
+    
+    height: 350px;
+}
+.about__title{
+    font-size: 1.5em;
+    font: bold;
+    padding: 20px 0px 20px ;
+}
+
+.about__paragraph{
+    padding: 20px 0px 20px ;
+    width: 80%;
+    font-size: 1em;
+}
+/*Skills*/
+.skills{
+margin: 20px 2% ;
+height: 600px;
+width: 95%;    
+}
+
+
+
+.skills__box{
+display: flex;
+margin-top: 15px;
+background: #ffffff;
+height: 120px;
+width: 150px;
+align-items: flex-end;
+padding: 10px;
+}  
+/*Hobbies*/
+
+.hobbies{
+    margin: 200px 2% ;
+    height: 800px;
+    width: 95%; 
+}
+
+
+.hobbies__line{
+    flex-wrap: wrap;
+}
+
+.hobbies__box{
+    display: flex;
+    margin-top: 15px;
+    background: #ffffff;
+    height: 120px;
+    width: 150px;
+    align-items: flex-end;
+    padding: 10px;
+}
+
+/*Formación Académica*/
+
+section.academic{
+    height: 900px;
+    margin-top: 300px;
+}
+
+
+.academic__courses{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.academic__courses__item__img{
+    display: flex;
+    background: #ffffff;
+    height: 180px;
+    width: 250px;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    
+}
+
+.academic__courses__item__title{
+    margin: 10px 0px;
+    font-size: 1em;
+    
+}
+
+/*Experiencia Profesional*/
+
+ /*Contacto*/
+ .formcontato__form{
+    width: 300px;
+}
+/*Footer*/
+
+}
